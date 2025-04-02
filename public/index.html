@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawTool - Indian Legal Research</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="welcome-page" class="welcome-page">
+        <div class="welcome-content">
+            <i class="fas fa-balance-scale welcome-icon"></i>
+            <h1>Welcome to LawTool</h1>
+            <p>Your digital legal research assistant.</p>
+            <button id="continue-btn" class="continue-btn">Continue</button>
+            <p class="signature">Made by Priyanshu</p>
+        </div>
+    </div>
+
+    <header id="main-header" style="display: none;">
+        <div class="logo">
+            <i class="fas fa-balance-scale"></i>
+            <h1>LawTool</h1>
+        </div>
+        <p class="tagline">Your digital legal research assistant</p>
+    </header>
+
+    <main id="main-content" style="display: none;">
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search Indian laws (e.g., Section 302 IPC, Article 21 Constitution)">
+                    <button onclick="searchLaw()">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <div class="filters">
+                    <select id="lawType">
+                        <option value="all">All Laws</option>
+                        <option value="ipc">Indian Penal Code</option>
+                        <option value="crpc">Criminal Procedure Code</option>
+                        <option value="constitution">Constitution</option>
+                        <option value="contract">Contract Act</option>
+                    </select>
+                    <select id="yearFilter">
+                        <option value="all">All Years</option>
+                    </select>
+                </div>
+            </div>
+            <button id="bookmark-btn" onclick="showBookmarks()">
+                <i class="fas fa-bookmark"></i> Bookmarks
+            </button>
+        </section>
+
+        <section class="results-section">
+            <div id="results" class="results-container"></div>
+            <div id="pagination" class="pagination"></div>
+        </section>
+    </main>
+
+    <footer id="main-footer" style="display: none;">
+        <p>Powered by Indian Kanoon API</p>
+        <p class="disclaimer">Note: This tool is for informational purposes only and not legal advice.</p>
+    </footer>
+
+    <div id="bookmarks-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeBookmarks()">&times;</span>
+            <h2>Your Bookmarks</h2>
+            <div id="bookmarks-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('continue-btn').addEventListener('click', function() {
+            document.getElementById('welcome-page').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('welcome-page').style.display = 'none';
+                document.getElementById('main-header').style.display = 'block';
+                document.getElementById('main-content').style.display = 'block';
+                document.getElementById('main-footer').style.display = 'block';
+            }, 500);
+        });
+    </script>
+</body>
+</html>
