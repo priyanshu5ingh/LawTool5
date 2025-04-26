@@ -1,6 +1,5 @@
 # 📚 Legal Research Tool
 
-![Project Banner](https://png.pngtree.com/png-clipart/20230106/original/pngtree-law-scales-of-justice-illustration-png-image_8877360.png)
 <!-- Replace the above link with your actual banner if you have one -->
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/priyanshu5ingh/LawTool5)
