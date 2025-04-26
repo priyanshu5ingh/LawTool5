@@ -1,13 +1,13 @@
 # 📚 Legal Research Tool
 
-![Project Banner](https://via.placeholder.com/1200x300?text=Legal+Research+Tool)  
+![Project Banner](https://png.pngtree.com/png-clipart/20230106/original/pngtree-law-scales-of-justice-illustration-png-image_8877360.png)
 <!-- Replace the above link with your actual banner if you have one -->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/legal-research-tool)
-![GitHub stars](https://img.shields.io/github/stars/your-username/legal-research-tool)
-![GitHub forks](https://img.shields.io/github/forks/your-username/legal-research-tool)
-![GitHub issues](https://img.shields.io/github/issues/your-username/legal-research-tool)
-![GitHub license](https://img.shields.io/github/license/your-username/legal-research-tool)
+![GitHub repo size](https://img.shields.io/github/repo-size/priyanshu5ingh/LawTool5)
+![GitHub stars](https://img.shields.io/github/stars/priyanshu5ingh/LawTool5)
+![GitHub forks](https://img.shields.io/github/forks/priyanshu5ingh/LawTool5)
+![GitHub issues](https://img.shields.io/github/issues/priyanshu5ingh/LawTool5)
+![GitHub license](https://img.shields.io/github/license/priyanshu5ingh/LawTool5)
 
 ---
 
